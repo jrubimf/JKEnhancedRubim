@@ -312,19 +312,19 @@ void G_AttackDelay( gentity_t *self, gentity_t *enemy )
 			}
 			break;
 		case WP_FLECHETTE:
-			attDelay += Q_irand( 500, 1500 );
+			attDelay += Q_irand( 1500, 2500 );
 			break;
 		case WP_ROCKET_LAUNCHER:
-			attDelay += Q_irand( 500, 1500 );
+			attDelay += Q_irand( 1500, 2500);
 			break;
 		case WP_CONCUSSION:
-			attDelay += Q_irand( 500, 1500 );
+			attDelay += Q_irand( 1500, 2500);
 			break;
 		case WP_BLASTER_PISTOL:	// apparently some enemy only version of the blaster
 			attDelay -= Q_irand( 500, 1500 );
 			break;
 		case WP_DISRUPTOR://sniper's don't delay?
-			return;
+			attDelay -= Q_irand(500, 1500);
 			break;
 		case WP_THERMAL://grenade-throwing has a built-in delay
 			return;
@@ -380,9 +380,9 @@ void G_AttackDelay( gentity_t *self, gentity_t *enemy )
 
 		if ( self->client->playerTeam == TEAM_PLAYER )
 		{//clamp it
-			if ( attDelay > 2000 )
+			if ( attDelay > 1000 )
 			{
-				attDelay = 2000;
+				attDelay = 1000;
 			}
 		}
 

@@ -50,11 +50,11 @@ void WP_FireBlasterMissile( gentity_t *ent, vec3_t start, vec3_t dir, qboolean a
 		{
 			if ( g_spskill->integer < 2 )
 			{
-				velocity *= BLASTER_NPC_VEL_CUT;
+				//velocity *= BLASTER_NPC_VEL_CUT;
 			}
 			else
 			{
-				velocity *= BLASTER_NPC_HARD_VEL_CUT;
+				//velocity *= BLASTER_NPC_HARD_VEL_CUT;
 			}
 		}
 	}
