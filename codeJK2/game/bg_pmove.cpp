@@ -6898,7 +6898,7 @@ void PM_WeaponLightsaber(void)
 			{//player
 				if ( pm->ps->forcePowerLevel[FP_SABER_DEFENSE] <= FORCE_LEVEL_1 )
 				{
-					pm->ps->weaponTime = parryDebounce[pm->ps->forcePowerLevel[FP_SABER_DEFENSE]];
+					pm->ps->weaponTime = parryDebounce[pm->ps->forcePowerLevel[FP_SABER_DEFENSE]] / 3;
 				}
 			}
 			else
