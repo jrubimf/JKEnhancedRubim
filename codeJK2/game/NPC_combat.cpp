@@ -2935,9 +2935,11 @@ void NPC_AimAdjust( int change )
 			NPCInfo->currentAim = -30;
 		}
 
+		NPCInfo->currentAim = -15;
 		//Com_Printf( "%s new aim = %d\n", NPC->NPC_type, NPCInfo->currentAim );
 
-		int debounce = 500+(3-g_spskill->integer)*100;
+		//int debounce = 500+(3-g_spskill->integer)*100;
+		int debounce = 1000;
 		TIMER_Set( NPC, "aimDebounce", Q_irand( debounce,debounce+1000 ) );
 		//int debounce = 1000+(3-g_spskill->integer)*500;
 		//TIMER_Set( NPC, "aimDebounce", Q_irand( debounce, debounce+2000 ) );
@@ -2948,10 +2950,12 @@ void G_AimSet( gentity_t *self, int aim )
 {
 	if ( self->NPC )
 	{
-		self->NPC->currentAim = aim;
+		//self->NPC->currentAim = aim;
+		self->NPC->currentAim = -15;
 		//Com_Printf( "%s new aim = %d\n", self->NPC_type, self->NPC->currentAim );
 
-		int debounce = 500+(3-g_spskill->integer)*100;
+		//int debounce = 500+(3-g_spskill->integer)*100;
+		int debounce = 1000;
 		TIMER_Set( self, "aimDebounce", Q_irand( debounce,debounce+1000 ) );
 	//	int debounce = 1000+(3-g_spskill->integer)*500;
 	//	TIMER_Set( self, "aimDebounce", Q_irand( debounce,debounce+2000 ) );
