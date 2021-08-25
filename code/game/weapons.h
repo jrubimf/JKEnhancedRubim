@@ -181,8 +181,8 @@ typedef struct ammoData_s
 
 // Bryar Pistol
 //--------
-#define BRYAR_PISTOL_VEL			1800
-#define BRYAR_PISTOL_DAMAGE			14
+#define BRYAR_PISTOL_VEL			6000 // 1800 
+#define BRYAR_PISTOL_DAMAGE			45 // 14
 #define BRYAR_CHARGE_UNIT			200.0f	// bryar charging gives us one more unit every 200ms--if you change this, you'll have to do the same in bg_pmove
 
 // E11 Blaster
@@ -190,35 +190,35 @@ typedef struct ammoData_s
 #define BLASTER_MAIN_SPREAD			0.5f
 #define BLASTER_ALT_SPREAD			1.5f
 #define BLASTER_NPC_SPREAD			0.5f
-#define BLASTER_VELOCITY			2300
+#define BLASTER_VELOCITY			7300 // 2300
 #define BLASTER_NPC_VEL_CUT			0.5f
 #define BLASTER_NPC_HARD_VEL_CUT	0.7f
-#define BLASTER_DAMAGE				20
-#define	BLASTER_NPC_DAMAGE_EASY		6
-#define	BLASTER_NPC_DAMAGE_NORMAL	12 // 14
-#define	BLASTER_NPC_DAMAGE_HARD		16 // 18
+#define BLASTER_DAMAGE				35
+#define	BLASTER_NPC_DAMAGE_EASY		35
+#define	BLASTER_NPC_DAMAGE_NORMAL	35 // 14
+#define	BLASTER_NPC_DAMAGE_HARD		35 // 18
 
 // Tenloss Disruptor
 //----------
-#define DISRUPTOR_MAIN_DAMAGE			14
-#define DISRUPTOR_NPC_MAIN_DAMAGE_EASY	5
-#define DISRUPTOR_NPC_MAIN_DAMAGE_MEDIUM	10
-#define DISRUPTOR_NPC_MAIN_DAMAGE_HARD	15
+#define DISRUPTOR_MAIN_DAMAGE			50
+#define DISRUPTOR_NPC_MAIN_DAMAGE_EASY	50
+#define DISRUPTOR_NPC_MAIN_DAMAGE_MEDIUM	50
+#define DISRUPTOR_NPC_MAIN_DAMAGE_HARD	50
 
-#define DISRUPTOR_ALT_DAMAGE			12
-#define DISRUPTOR_NPC_ALT_DAMAGE_EASY	15
-#define DISRUPTOR_NPC_ALT_DAMAGE_MEDIUM	25
-#define DISRUPTOR_NPC_ALT_DAMAGE_HARD	30
-#define DISRUPTOR_ALT_TRACES			3		// can go through a max of 3 entities
+#define DISRUPTOR_ALT_DAMAGE			70
+#define DISRUPTOR_NPC_ALT_DAMAGE_EASY	70
+#define DISRUPTOR_NPC_ALT_DAMAGE_MEDIUM	70
+#define DISRUPTOR_NPC_ALT_DAMAGE_HARD	70
+#define DISRUPTOR_ALT_TRACES			6		// can go through a max of 3 entities
 #define DISRUPTOR_CHARGE_UNIT			150.0f	// distruptor charging gives us one more unit every 150ms--if you change this, you'll have to do the same in bg_pmove
 
 // Wookie Bowcaster
 //----------
-#define	BOWCASTER_DAMAGE			45
-#define	BOWCASTER_VELOCITY			1300
-#define	BOWCASTER_NPC_DAMAGE_EASY	12
-#define	BOWCASTER_NPC_DAMAGE_NORMAL	24
-#define	BOWCASTER_NPC_DAMAGE_HARD	36
+#define	BOWCASTER_DAMAGE			65
+#define	BOWCASTER_VELOCITY			5500 // 1300
+#define	BOWCASTER_NPC_DAMAGE_EASY	65
+#define	BOWCASTER_NPC_DAMAGE_NORMAL	65
+#define	BOWCASTER_NPC_DAMAGE_HARD	65
 #define BOWCASTER_SPLASH_DAMAGE		0
 #define BOWCASTER_SPLASH_RADIUS		0
 #define BOWCASTER_SIZE				2
@@ -231,31 +231,31 @@ typedef struct ammoData_s
 //----------
 #define REPEATER_SPREAD				1.4f
 #define REPEATER_NPC_SPREAD			0.7f
-#define	REPEATER_DAMAGE				8
-#define	REPEATER_VELOCITY			1600
-#define	REPEATER_NPC_DAMAGE_EASY	2
-#define	REPEATER_NPC_DAMAGE_NORMAL	4
-#define	REPEATER_NPC_DAMAGE_HARD	6
+#define	REPEATER_DAMAGE				15
+#define	REPEATER_VELOCITY			5600 // 1600
+#define	REPEATER_NPC_DAMAGE_EASY	15
+#define	REPEATER_NPC_DAMAGE_NORMAL	15
+#define	REPEATER_NPC_DAMAGE_HARD	15
 
 #define REPEATER_ALT_SIZE				3	// half of bbox size
-#define	REPEATER_ALT_DAMAGE				60
+#define	REPEATER_ALT_DAMAGE				75
 #define REPEATER_ALT_SPLASH_DAMAGE		60
 #define REPEATER_ALT_SPLASH_RADIUS		128
-#define	REPEATER_ALT_VELOCITY			1100
-#define	REPEATER_ALT_NPC_DAMAGE_EASY	15
-#define	REPEATER_ALT_NPC_DAMAGE_NORMAL	30
-#define	REPEATER_ALT_NPC_DAMAGE_HARD	45
+#define	REPEATER_ALT_VELOCITY			500 // 1100
+#define	REPEATER_ALT_NPC_DAMAGE_EASY	75
+#define	REPEATER_ALT_NPC_DAMAGE_NORMAL	75
+#define	REPEATER_ALT_NPC_DAMAGE_HARD	75
 
 // DEMP2
 //----------
-#define	DEMP2_DAMAGE				15
-#define	DEMP2_VELOCITY				1800
-#define	DEMP2_NPC_DAMAGE_EASY		6
-#define	DEMP2_NPC_DAMAGE_NORMAL		12
-#define	DEMP2_NPC_DAMAGE_HARD		18
+#define	DEMP2_DAMAGE				30
+#define	DEMP2_VELOCITY				6200 // 6200
+#define	DEMP2_NPC_DAMAGE_EASY		30
+#define	DEMP2_NPC_DAMAGE_NORMAL		03
+#define	DEMP2_NPC_DAMAGE_HARD		30
 #define	DEMP2_SIZE					2		// half of bbox size
 
-#define DEMP2_ALT_DAMAGE			15
+#define DEMP2_ALT_DAMAGE			30
 #define DEMP2_CHARGE_UNIT			500.0f	// demp2 charging gives us one more unit every 500ms--if you change this, you'll have to do the same in bg_pmove
 #define DEMP2_ALT_RANGE				4096
 #define DEMP2_ALT_SPLASHRADIUS		256
@@ -264,11 +264,11 @@ typedef struct ammoData_s
 //---------
 #define FLECHETTE_SHOTS				6
 #define FLECHETTE_SPREAD			4.0f
-#define FLECHETTE_DAMAGE			15
-#define FLECHETTE_VEL				3500
+#define FLECHETTE_DAMAGE			25
+#define FLECHETTE_VEL				8500 // 3500
 #define FLECHETTE_SIZE				1
 
-#define FLECHETTE_ALT_DAMAGE		20
+#define FLECHETTE_ALT_DAMAGE		40
 #define FLECHETTE_ALT_SPLASH_DAM	20
 #define FLECHETTE_ALT_SPLASH_RAD	128
 
@@ -281,13 +281,13 @@ typedef struct ammoData_s
 
 // Personal Rocket Launcher
 //---------
-#define	ROCKET_VELOCITY				900
+#define	ROCKET_VELOCITY				2000
 #define	ROCKET_DAMAGE				100
 #define	ROCKET_SPLASH_DAMAGE		100
 #define	ROCKET_SPLASH_RADIUS		160
-#define ROCKET_NPC_DAMAGE_EASY		20
-#define ROCKET_NPC_DAMAGE_NORMAL	40
-#define ROCKET_NPC_DAMAGE_HARD		60
+#define ROCKET_NPC_DAMAGE_EASY		100
+#define ROCKET_NPC_DAMAGE_NORMAL	100
+#define ROCKET_NPC_DAMAGE_HARD		100
 #define ROCKET_SIZE					3
 
 #define	ROCKET_ALT_VELOCITY			(ROCKET_VELOCITY*0.5)
@@ -296,7 +296,7 @@ typedef struct ammoData_s
 // Concussion Rifle
 //---------
 //primary
-#define	CONC_VELOCITY				3000
+#define	CONC_VELOCITY				7500 
 #define	CONC_DAMAGE					150
 #define CONC_NPC_SPREAD				0.7f
 #define	CONC_NPC_DAMAGE_EASY		15
@@ -306,26 +306,26 @@ typedef struct ammoData_s
 #define	CONC_SPLASH_RADIUS			300
 //alt
 #define CONC_ALT_DAMAGE				225//100
-#define CONC_ALT_NPC_DAMAGE_EASY	10
-#define CONC_ALT_NPC_DAMAGE_MEDIUM	20
-#define CONC_ALT_NPC_DAMAGE_HARD	30
+#define CONC_ALT_NPC_DAMAGE_EASY	50
+#define CONC_ALT_NPC_DAMAGE_MEDIUM	50
+#define CONC_ALT_NPC_DAMAGE_HARD	50
 
 // Emplaced Gun
 //--------------
-#define EMPLACED_VEL				6000	// very fast
+#define EMPLACED_VEL				12000	// very fast
 #define EMPLACED_DAMAGE				150		// and very damaging
 #define EMPLACED_SIZE				5		// make it easier to hit things
 
 // ATST Main Gun
 //--------------
-#define ATST_MAIN_VEL				4000	//
+#define ATST_MAIN_VEL				8000	//
 #define ATST_MAIN_DAMAGE			25		//
 #define ATST_MAIN_SIZE				3		// make it easier to hit things
 
 // ATST Side Gun
 //---------------
 #define ATST_SIDE_MAIN_DAMAGE				75
-#define ATST_SIDE_MAIN_VELOCITY				1300
+#define ATST_SIDE_MAIN_VELOCITY				6500
 #define ATST_SIDE_MAIN_NPC_DAMAGE_EASY		30
 #define ATST_SIDE_MAIN_NPC_DAMAGE_NORMAL	40
 #define ATST_SIDE_MAIN_NPC_DAMAGE_HARD		50
@@ -333,12 +333,12 @@ typedef struct ammoData_s
 #define ATST_SIDE_MAIN_SPLASH_DAMAGE		10	// yeah, pretty small, either zero out or make it worth having?
 #define ATST_SIDE_MAIN_SPLASH_RADIUS		16	// yeah, pretty small, either zero out or make it worth having?
 
-#define ATST_SIDE_ALT_VELOCITY				1100
+#define ATST_SIDE_ALT_VELOCITY				5500
 #define ATST_SIDE_ALT_NPC_VELOCITY			600
 #define ATST_SIDE_ALT_DAMAGE				130
 
-#define ATST_SIDE_ROCKET_NPC_DAMAGE_EASY	30
-#define ATST_SIDE_ROCKET_NPC_DAMAGE_NORMAL	50
+#define ATST_SIDE_ROCKET_NPC_DAMAGE_EASY	90
+#define ATST_SIDE_ROCKET_NPC_DAMAGE_NORMAL	90
 #define ATST_SIDE_ROCKET_NPC_DAMAGE_HARD	90
 
 #define	ATST_SIDE_ALT_SPLASH_DAMAGE			130
@@ -348,8 +348,8 @@ typedef struct ammoData_s
 
 // Stun Baton
 //--------------
-#define STUN_BATON_DAMAGE			22
-#define STUN_BATON_ALT_DAMAGE		22
+#define STUN_BATON_DAMAGE			30
+#define STUN_BATON_ALT_DAMAGE		30
 #define STUN_BATON_RANGE			25
 
 // Laser Trip Mine
@@ -390,9 +390,9 @@ typedef struct ammoData_s
 
 // Tusken Rifle Shot
 //--------------
-#define TUSKEN_RIFLE_VEL			3000	// fast
-#define TUSKEN_RIFLE_DAMAGE_EASY	20		// damaging
-#define TUSKEN_RIFLE_DAMAGE_MEDIUM	30		// very damaging
+#define TUSKEN_RIFLE_VEL			12000	// fast
+#define TUSKEN_RIFLE_DAMAGE_EASY	50		// damaging
+#define TUSKEN_RIFLE_DAMAGE_MEDIUM	50		// very damaging
 #define TUSKEN_RIFLE_DAMAGE_HARD	50		// extremely damaging
 
 
