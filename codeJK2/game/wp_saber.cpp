@@ -4866,14 +4866,14 @@ void WP_SaberStartMissileBlockCheck( gentity_t *self, usercmd_t *ucmd  )
 		return;
 	}
 
-	if ( self->client->ps.forcePowersActive&(1<<FP_LIGHTNING) )
-	{//can't block while zapping
-		return;
-	}
+	//if ( self->client->ps.forcePowersActive&(1<<FP_LIGHTNING) )
+	//{//can't block while zapping
+		//return;
+	//}
 
 	if ( self->client->ps.forcePowersActive&(1<<FP_PUSH) )
 	{//can't block while shoving
-		return;
+		//return;
 	}
 
 	if ( self->client->ps.forcePowersActive&(1<<FP_GRIP) )
@@ -4912,7 +4912,7 @@ void WP_SaberStartMissileBlockCheck( gentity_t *self, usercmd_t *ucmd  )
 
 	if ( self->client->ps.forcePowerDebounce[FP_SABER_DEFENSE] > level.time )
 	{//can't block while gripping (FIXME: or should it break the grip?  Pain should break the grip, I think...)
-		return;
+		//return;
 	}
 
 	if ( !self->s.number && !g_saberAutoBlocking->integer && self->client->ps.saberBlockingTime<level.time )

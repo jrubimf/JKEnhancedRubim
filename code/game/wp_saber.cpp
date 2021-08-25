@@ -7834,22 +7834,22 @@ void WP_SaberStartMissileBlockCheck( gentity_t *self, usercmd_t *ucmd  )
 
 		if ( self->client->ps.forcePowerDebounce[FP_SABER_DEFENSE] > level.time )
 		{//can't block while already blocking
-			return;
+			//return;
 		}
 
 		if ( self->client->ps.forcePowersActive&(1<<FP_LIGHTNING) )
 		{//can't block while zapping
-			return;
+			//return;
 		}
 
 		if ( self->client->ps.forcePowersActive&(1<<FP_DRAIN) )
 		{//can't block while draining
-			return;
+			//return;
 		}
 
 		if ( self->client->ps.forcePowersActive&(1<<FP_PUSH) )
 		{//can't block while shoving
-			return;
+			//return;
 		}
 
 		if ( self->client->ps.forcePowersActive&(1<<FP_GRIP) )
