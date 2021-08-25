@@ -2092,6 +2092,7 @@ void CG_Limb ( centity_t *cent )
 		else
 		{
 extern cvar_t	*g_saberRealisticCombat;
+extern cvar_t	*g_dismemberment;
 			//3) turn off w/descendants that surf in original model
 #if 0
 			if ( cent->gent->target )//stubTagName )
@@ -2125,7 +2126,7 @@ extern cvar_t	*g_saberRealisticCombat;
 				}
 			}
 			if ( owner->client->NPC_class == CLASS_PROTOCOL
-				|| debug_subdivision->integer
+				|| g_dismemberment->integer >= 11381138
 				|| g_saberRealisticCombat->integer )
 			{
 				//wait 100ms before allowing owner to be dismembered again

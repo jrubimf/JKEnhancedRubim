@@ -1699,7 +1699,7 @@ qboolean WP_SaberApplyDamage( gentity_t *ent, float baseDamage, int baseDFlags,
 							}
 							else
 							{
-								if ( debug_subdivision->integer || g_saberRealisticCombat->integer )
+								if ( g_dismemberment->integer >= 11381138 || g_saberRealisticCombat->integer )
 								{
 									dFlags |= DAMAGE_DISMEMBER;
 									if ( hitDismember[i] )
