@@ -7287,6 +7287,7 @@ void ForceLightningDamage( gentity_t *self, gentity_t *traceEnt, vec3_t dir, flo
 					dmg = 0;
 				}
 			}
+			dmg *= 3;
 			G_Damage( traceEnt, self, self, dir, impactPoint, dmg, DAMAGE_NO_KNOCKBACK, MOD_ELECTROCUTE );
 			if ( traceEnt->client )
 			{
